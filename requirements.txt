@@ -1,0 +1,4 @@
+requests
+discord.py
+aiosqlite
+discord-py-interactions
