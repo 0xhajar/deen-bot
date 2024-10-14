@@ -166,7 +166,7 @@ async def surat(ctx, surah_number: int):
     else:
         await ctx.send(f"Sorry, I couldn't fetch Surah {surah_number} at the moment. 😔")
     
-@tasks.loop(hours=2)
+@tasks.loop(hours=1)
 async def post_hourly_verse():
     """Posts a random verse every hour in the specified channel."""
     for guild in bot.guilds:
@@ -178,7 +178,7 @@ async def post_hourly_verse():
                 verse_text = get_random_verse(lang_code)
                 await channel.send(verse_text + " 🌟")
 
-@tasks.loop(hours=5)
+@tasks.loop(hours=1)
 async def send_reminders():
     """Sends reminders five times a day in the selected channel."""
     for guild in bot.guilds:
