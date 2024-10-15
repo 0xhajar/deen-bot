@@ -1,14 +1,75 @@
 # Deen-bot
 
-🌟 Deen is a comprehensive Islamic bot 🌙✨
-Get accurate prayer times based on your city 🕌, daily Quranic verses for reflection 📖, and gentle reminders to help you stay connected to your faith. 💖
+🌟 **Deen** is a comprehensive Islamic bot 🌙✨  
+Get accurate prayer times based on your city 🕌, daily Quranic verses for reflection 📖, and gentle reminders to help you stay connected to your faith. 💖  
 A perfect companion for any community seeking to enhance their Islamic practices online! 🕋💫
 
-Made with love by @0xhajar , If you have any questions, feel free to contact me on Twitter! ❤️
+Made with love by **[@0xhajar](https://twitter.com/0xhajar)**. If you have any questions, feel free to contact me on Twitter! ❤️
 
-## init.
-pip install -r requirements.txt 
------
-## techno used.
-python3 discord.py sqlite3
------
+## Features
+
+- Fetch specific Surahs from the Quran.
+- Get random verses in different languages.
+- Retrieve prayer times for specific cities.
+- Set preferred language for Quran verses and reminders.
+- Specify a channel for receiving daily Quran verses and prayer times.
+- Send hourly and periodic reminders with inspirational messages.
+
+## Setup
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/0xhajar/deenbot.git
+   cd deenbot
+
+2. **Create a Bot on Discord:**
+    
+    Follow the Discord Developer Portal to create your bot and get your bot token.
+
+3. **Install Dependencies:**
+
+    ```bash
+   pip install -r requirements.txt
+
+4. **Create a Database:**
+
+    The bot uses SQLite for data storage. Ensure that the bot_data.db file is created and set up correctly.
+
+5. **Configure Environment Variables:**
+
+    Fill in the .env file in the root directory and add your Discord bot token:    
+    TOKEN_BOT=your_discord_bot_token
+
+6. **Run the Bot:**
+
+    ```bash
+    python main.py
+
+
+Commands
+Slash Commands
+/help: Displays instructions and available commands for the bot.
+/salam: Sends a greeting in Arabic.
+/prayer <city> [country]: Fetches prayer times for the specified city and country (default is France).
+/verse: Fetches a random verse from the Quran in the selected language.
+/surat <number>: Fetches the specified Surah from the Quran.
+/language: Sets the language for Quran verses and reminders (options: en, ar, fr).
+/channel: Sets the channel for receiving Quran verses and prayer times.
+
+Supported Languages
+English (en): Translations by Abdullah Yusuf Ali
+Arabic (ar): Translations by Alafasy
+French (fr): Translations by Hamidullah
+
+Contributing
+If you would like to contribute to Deen-bot, feel free to fork the repository and submit a pull request. Here are some ways you can contribute:
+
+Reporting Issues: If you find any bugs or have suggestions for improvements, please open an issue.
+Feature Requests: If you have ideas for new features, let us know!
+Code Contributions: Feel free to fork the repository and create a pull request with your changes.
+
+Acknowledgements
+discord.py: The library used for creating Discord bots.
+Al-Quran Cloud API: API for fetching Quranic verses.
+Aladhan API: API for fetching prayer times.
