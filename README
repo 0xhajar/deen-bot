@@ -47,20 +47,21 @@ Made with love by **[@0xhajar](https://twitter.com/0xhajar)**. If you have any q
     python main.py
 
 
-Commands
-Slash Commands
-/help: Displays instructions and available commands for the bot.
-/salam: Sends a greeting in Arabic.
-/prayer <city> [country]: Fetches prayer times for the specified city and country (default is France).
-/verse: Fetches a random verse from the Quran in the selected language.
-/surat <number>: Fetches the specified Surah from the Quran.
-/language: Sets the language for Quran verses and reminders (options: en, ar, fr).
-/channel: Sets the channel for receiving Quran verses and prayer times.
+| Command                     | Description                                                              |
+|-----------------------------|--------------------------------------------------------------------------|
+| /help                       | Displays instructions and available commands for the bot.               |
+| /salam                      | Sends a greeting in Arabic.                                             |
+| /prayer <city> [country]   | Fetches prayer times for the specified city and country (default is France). |
+| /verse                      | Fetches a random verse from the Quran in the selected language.        |
+| /surat <number>             | Fetches the specified Surah from the Quran.                            |
+| /language                   | Sets the language for Quran verses and reminders.                       |
+| /channel                    | Sets the channel for receiving Quran verses and prayer times.          |
 
-Supported Languages
-English (en): Translations by Abdullah Yusuf Ali
-Arabic (ar): Translations by Alafasy
-French (fr): Translations by Hamidullah
+| Language | Code | Translator                     |
+|----------|------|---------------------------------|
+| English  | en   | Translations by Abdullah Yusuf Ali |
+| Arabic   | ar   | Translations by Alafasy        |
+| French   | fr   | Translations by Hamidullah     |
 
 Contributing
 If you would like to contribute to Deen-bot, feel free to fork the repository and submit a pull request. Here are some ways you can contribute:
